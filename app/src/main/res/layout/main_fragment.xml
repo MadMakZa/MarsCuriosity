@@ -27,23 +27,27 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="120dp"
         android:text="Rover Camera"
         android:textColor="@color/black"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.278"
+        app:layout_constraintHorizontal_bias="0.077"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
         android:id="@+id/tvSelectedRover"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@color/white"
-        android:gravity="center"
+        android:gravity="start|center"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
         android:paddingStart="15dp"
         android:paddingEnd="35dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
         android:text="Front Hazard Avoidance Camera"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -53,6 +57,8 @@
         android:id="@+id/btnSwitchRover"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/dropdown"
+        android:layout_marginEnd="5dp"
         app:layout_constraintBottom_toBottomOf="@+id/tvSelectedRover"
         app:layout_constraintEnd_toEndOf="@+id/tvSelectedRover"
         app:layout_constraintTop_toTopOf="@+id/tvSelectedRover" />
@@ -64,31 +70,51 @@
         android:text="Date"
         android:textColor="@color/black"
         android:textSize="14sp"
+        android:layout_marginTop="25dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.235"
+        app:layout_constraintHorizontal_bias="0.065"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvSelectedRover" />
 
     <TextView
         android:id="@+id/tvSelectedDate"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@color/white"
-        android:gravity="center"
+        android:gravity="start|center"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
         android:paddingStart="15dp"
         android:paddingEnd="35dp"
-        android:text="Front Hazard Avoidance Camera"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:text="18 oct. 2021"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <ImageButton
         android:id="@+id/btnSwitchDate"
+        android:background="@drawable/calendar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
         app:layout_constraintBottom_toBottomOf="@+id/tvSelectedDate"
         app:layout_constraintEnd_toEndOf="@+id/tvSelectedDate"
         app:layout_constraintTop_toTopOf="@+id/tvSelectedDate" />
+
+    <Button
+        android:id="@+id/btnExplore"
+        android:text="Explore"
+        android:backgroundTint="@color/mars"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSelectedDate" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
