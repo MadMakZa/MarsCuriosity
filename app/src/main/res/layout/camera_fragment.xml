@@ -44,8 +44,8 @@
         app:layout_constraintStart_toStartOf="@+id/tvSelectedCamera"
         app:layout_constraintTop_toBottomOf="@+id/tvSelectedCamera" />
 
-    <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/photosViewPager"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/photosRecyclerView"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="15dp"
@@ -55,7 +55,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvCurrentCameraDate">
 
-    </androidx.viewpager2.widget.ViewPager2>
+    </androidx.recyclerview.widget.RecyclerView>
 
 
 
